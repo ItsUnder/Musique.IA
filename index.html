@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html id="html">
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/logopq.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title> Musique.IA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <body>
+        <div class="container-input">
+        <img class="logo" src="imgs/Logo.png">
+    </div>
+        <br>
+        <div class="hider" id="hi">
+        <div class="container-input">
+            <label for="qi1" class="question">
+                Como está o tempo? 
+            </label> <br>
+            <br>
+            <button class="question-input" id="qi1" onclick="firstQuestionAnswer(1)">Nublado</button>
+            <button class="question-input" id="qi1.2" onclick="firstQuestionAnswer(2)" >Limpo</button>
+        </div>
+            <br>
+            <br>
+            <div class="container-input">
+            <label for="qi2" class="question">
+                Como você se sente?
+            </label> <br>
+            <br>
+            
+            <button class="question-input" id="qi2" onclick="secondQuestionAnswer(1)">Feliz</button>
+            <button class="question-input" id="qi2.1" onclick="secondQuestionAnswer(2)">Triste</button>
+            <button class="question-input" id="qi2.2" onclick="secondQuestionAnswer(3)">Tédio</button>
+        </div>
+            <br>
+            <br>
+            <div class="container-input">
+            <label for="qi3" class="question">
+               Você precisa de uma música para...
+            </label> <br>
+            <br>
+            <button class="question-input" id="qi3" onclick="thirdQuestionAnwser(1)">Descansar</button>
+            <button class="question-input" id="qi3.1" onclick="thirdQuestionAnwser(2)">Cantar</button>
+            <button class="question-input" id="qi3.2" onclick="thirdQuestionAnwser(3)">Trabalhar ou Estudar</button>
+            <button class="question-input" id="qi3.3" onclick="thirdQuestionAnwser(4)">Dormir</button>
+            <button class="question-input" id="qi3.5" onclick="thirdQuestionAnwser(5)">Estudar</button>
+            </div>
+            <br>
+            <br>
+            <div class="container-input">
+            <label for="qi4" class="question">
+                Você possui companhia? Se sim, qual é a faixa etária?
+             </label> <br>
+             <br>
+             <button class="question-input" id="qi4" onclick="fourthQuestionAnwser(0)">Estou sozinho</button>
+             <button class="question-input" id="qi4.2" onclick="fourthQuestionAnwser(2)">20-30 anos</button>
+             <button class="question-input" id="qi4.3" onclick="fourthQuestionAnwser(3)">60 para cima</button>
+            </div>
+             <br>
+             <br>
+             <div class="container-input">
+             <label for="qi4" class="question">
+                 Onde você esta?
+              </label> <br>
+              <br>
+              <button class="question-input" id="qi5" onclick="fifthQuestionAnwser(1)">Casa</button>
+              <button class="question-input" id="qi5.1" onclick="fifthQuestionAnwser(2)">Parque</button>
+              <button class="question-input" id="qi5.2" onclick="fifthQuestionAnwser(3)">Trabalho ou Escola</button>
+              <button class="question-input" id="qi5.3" onclick="fifthQuestionAnwser(4)">Praia</button>
+              <button class="question-input" id="qi5.4" onclick="fifthQuestionAnwser(5)">Festa</button>
+             </div>
+        <img class="musicOption" id="mq">
+        <br>
+        <br>
+        <br>
+        <div class="container-input">     
+        <button class="question-input" onclick="selectedGenres()">Resultado</button>
+    </div>
+</div>
+<div class="container-input">
+        <button class="clear-button" onclick="clearAll()" id="cb">Tentar Novamente</button>
+</div>
+        <br>
+        <div class="container-input">
+        <p class="resultGenre" id="G1"></p> 
+        <p class="resultGenre" id="G2"></p>
+        <p class="resultGenre" id="G3"></p>
+        <p class="resultGenre" id="G4"></p>
+        <p class="resultGenre" id="G5"></p>
+        <p class="resultGenre" id="G6"></p>
+        <br>
+        <br>
+        <iframe class="resultMusic"  id="RM1" width="20%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe class="resultMusic"  id="RM2" width="20%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe class="resultMusic"  id="RM3" width="20%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe class="resultMusic"  id="RM4" width="20%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe class="resultMusic"  id="RM5" width="20%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe class="resultMusic"  id="RM6" width="20%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    </body>
+    
