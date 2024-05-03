@@ -417,9 +417,6 @@ function changeThemes() {
       };
     window.addEventListener("scroll", ScrollFunction);
 
-
-
-
 function firstQuestionAnswer(choice) {
 if (choice == 1) {
   // Match Nublado
